@@ -1,0 +1,54 @@
+Testes
+É comum mexer em uma parte do codigo e outra bugmatCardAvatar
+testes automatizados nos ajudam a previnir isso
+
+cookie 
+    -armazena dados no navegador do usuario
+    -permite que o usuario nao precise se logar toda vez que acessar o site
+    -permite que o usuario tenha uma experiencia melhor
+
+    PARA CONFIGURAR O COOKIE deve-se instalar o pacote @fastify/cokie e registralo no app atraves do register 
+    
+
+Tipos de testes
+==> Unitario
+    teste de funções (partes pequenas do software)
+
+==> Integracao
+    (comunicação de 2 ou mais unidades)
+        funcao que chama outra função
+
+==> E2E
+    simulam um usuario operando na nossa aplicação 
+    
+
+fron-end 
+    -abre a pagina de login 
+    -preenche o campo de email
+    -preenche o campo de senha
+    -clica no botao de login
+
+back-end
+    -recebe a requisicao de login (http)
+    -verifica se o email existe
+    -verifica se a senha esta correta
+    -gera um token JWT
+    -retorna o token para o front-end
+
+Piramide de testes
+    -unitarios
+    -integracao
+    -e2e
+
+*testes unitarios smpre serão mais volumosos  
+*testes de e2e smpre serão mais lentos
+
+Ferramenta 
+    -jest jest.js.io
+    -vitest
+
+    supertest ==> trabalhar com rotas http
+
+    JAMAIS UM TESTE PODE DEPENDER DE OUTRO
+
+Configurando banco de testes 
